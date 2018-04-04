@@ -1,0 +1,32 @@
+.jumbotron {
+    padding: 30px;
+    background-color: purple;
+    color: white;
+}
+
+img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+button {
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: purple;
+    border-color: white;
+}
+
+#totalScore.row {
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+#random-number.row {
+    font-size: x-large
+}
+
+#instructions {
+    font-size: small;
+}

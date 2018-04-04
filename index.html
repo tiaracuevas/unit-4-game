@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+      
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+        <!-- Added a link to Bootstrap-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+        <!-- Link to css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+
+</head>
+<body>
+
+    <!-- Title -->
+    <div class="jumbotron">
+            <h1 class="text-center">Crystal Collector</h1>
+            </div>
+
+<div class="container">
+
+    <!-- Instructions -->
+    <div class="row" id="instructions">
+        <p>You will be given a target number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the target number, you lose if your total score goes above the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time you start a new game, the values of the crystals change.</p>
+    </div>
+
+    <!-- random number & win/loss counter-->
+    <div class="row" id="row2">
+        <div class= "col-sm-8">
+            <div class= "jumbotron">
+            <div class= "random-number">" "</div>
+        </div>
+        </div>
+        <!-- win/loss -->
+        <div class= "col-sm-4">
+            <div class= "winLoss">
+                <p id="wins">Wins: </p>
+                <p id="losses">Losses: </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- crystals -->
+    <div class="row" id="crystals">
+        <!--crystal 1-->
+        <div class="col-sm-3">
+            <img src="assets/images/blue_crystal.jpg" alt="crystalOne">
+            <button id="crystal-one" class="btn btn-primary btn-sm">Crystal 1</button>
+        </div>
+        <!--crystal 2-->
+        <div class="col-sm-3">
+            <img src="assets/images/pink_crystal.jpg" alt="crystalTwo">
+            <button id="crystal-two" class="btn btn-primary btn-sm">Crystal 2</button>
+        </div>
+        <!--crystal 3-->
+        <div class="col-sm-3">
+            <img src="assets/images/purple_crystal.jpg" alt="crystalThree">
+            <button id="crystal-three" class="btn btn-primary btn-sm">Crystal 3</button>
+        </div>
+         <!--crystal 4-->
+         <div class="col-sm-3">
+            <img src="assets/images/red_crystal.jpg" alt="crystalFour">
+            <button id="crystal-four" class="btn btn-primary btn-sm">Crystal 4</button>                      
+        </div>
+    </div>
+
+    <!-- Total Score-->
+    <div class="row" id="totalScore">
+        <p>Your total score is: </p>
+    </div>
+    
+
+
+
+
+
+
+
+<!--end container-->
+</div>
+    <!-- Link to javaScript -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
